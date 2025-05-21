@@ -16,4 +16,4 @@ Página única inspirada no tema da Vinharia Agnello, com foco na aplicação de
 https://github.com/matbarroso97/cp3-vinheria
 
 ## Link do site publicado no GitHub Pages
-https://matbarroso97.github.io/cp3-vinheria/
+https://matbarroso97.github.io/cp3-vinheria/flex-layout.html
