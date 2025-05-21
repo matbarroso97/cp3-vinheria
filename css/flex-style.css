@@ -1,0 +1,84 @@
+/* Garante que o layout ocupe toda a altura da tela e empurra o rodapé para o fim */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Permite que o conteúdo cresça para ocupar o espaço entre header e footer */
+main.conteudo {
+  flex: 1;
+}
+
+/* Estilo base do body */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho com Flexbox: título à esquerda e menu à direita */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #540000;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+/* Links do menu */
+.menu a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* Pseudo-classe 1: muda a cor do link ao passar o mouse */
+.menu a:hover {
+  color: #ffd700;
+}
+
+/* Espaçamento do conteúdo principal */
+.conteudo {
+  padding: 2rem;
+}
+
+/* Seção de destaque no topo da página principal */
+.destaque {
+  background: #f0e0d6;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Container de cards com Flexbox em coluna e centralizado */
+.cards {
+  display: flex;
+  flex-direction: column; /* Um embaixo do outro */
+  align-items: center;     /* Centralizado na horizontal */
+  gap: 1rem;               /* Espaço entre os cards */
+}
+
+/* Estilo individual dos cards */
+.card {
+  background: #f5f5f5;
+  padding: 1rem;
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+/* Pseudo-classe 2 + transformações: animações visuais nos cards */
+.card:hover {
+  transform: scale(1.05) rotate(1deg);
+  background: #e0d4c1;
+}
+
+/* Rodapé fixado no fim da página */
+.rodape {
+  background: #540000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
